@@ -21,7 +21,7 @@ class SmallSMILHandler(ContentHandler):
             Mi_Dicc = {}
             for atributo in self.diccionario[name]:
                 Mi_Dicc[atributo] = attrs.get(atributo, "")
-            self.lista.append(Mi_Dicc)
+            self.lista.append([name, Mi_Dicc])
 
     def get_tags(self):
         return self.lista
